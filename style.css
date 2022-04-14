@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    animation:  cont 1s infinite alternate;
+    
+}
+.bg{
+    margin-bottom: -34px;
+    height: 50vh;
+    width: 100vw;
+}
+.tree{
+    
+    margin-top: -217px;
+    height: 60vh;
+    width: 100vw;
+}
+.sadak{
+    display: flex;
+    flex-direction: row;justify-content: space-between;
+}
+.track{
+    height: 30vh;
+    width: 100vw;
+    animation: road 1s  infinite linear ;
+}
+.track2{
+    height: 30vh;
+    width: 100vw;
+    animation: road 1s  infinite linear ;
+}
+.car{
+    left: 91px;
+    height: 108px;
+    position: absolute;
+    bottom: 136px;
+    position: absolute;
+}
+.left{
+    left: 133px;
+    position: absolute;
+    
+    height: 74px;
+    bottom: 129px;
+    animation: rot 1s infinite linear ;
+}
+.right{
+    left: 327px;
+    bottom: 129px;
+    position: absolute;
+    height: 76px;
+    animation: rot 1s infinite  linear;
+}
+@keyframes cont{
+    0%{
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    100%{
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+}
+@keyframes rot{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+@keyframes road{
+     0%{
+         transform: translate(0px);
+     }
+     100%{
+         transform: translateX(-100vw);
+     }
+}
